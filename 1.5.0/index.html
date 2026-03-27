@@ -1,0 +1,1680 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+        <link rel="next" href="changelog/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Getting Started - Docs for xsettings</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Ubuntu";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#install" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Docs for xsettings" class="md-header__button md-logo" aria-label="Docs for xsettings" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Docs for xsettings
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Getting Started
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="cyan"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Docs for xsettings" class="md-nav__button md-logo" aria-label="Docs for xsettings" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Docs for xsettings
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="." class="md-nav__link md-nav__link--active">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    xsettings
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    xsettings
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="api/xsettings/" target="_blank" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#install" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Install
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introduction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Start
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basesettings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BaseSettings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="BaseSettings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basesettings-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BaseSettings usage
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="BaseSettings usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classlazy-attribute-lookup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Class/Lazy Attribute Lookup
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#change-default-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Change Default Value
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-new-setting-on-class-attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setting New Setting on Class Attributes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#class-instance-attribute-lookup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Class Instance Attribute lookup
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inheriting-from-plain-classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inheriting from Plain Classes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#settingsfield" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SettingsField
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SettingsField">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-settingsfield-is-generated" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How SettingsField is Generated
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#converters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Converters
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Properties
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#supports-read-only-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supports Read-Only Properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getter-properties-supported-as-a-forwardlazy-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Getter Properties Supported as a Forward/Lazy-Reference
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getter-property-with-custom-settingsfield" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Getter Property with Custom SettingsField
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setter-properties-currently-unsupported" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setter Properties Currently Unsupported
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#settingsretriever" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SettingsRetriever
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-setting-field-values-are-resolved" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How Setting Field Values Are Resolved
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How Setting Field Values Are Resolved">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resolution-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resolution Details
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#callable-defaults" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Callable Defaults
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#things-to-watch-out-for" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Things to Watch Out For
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h2 id="install">Install<a class="headerlink" href="#install" title="Permanent link">&para;</a></h2>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># via pip</span>
+pip<span class="w"> </span>install<span class="w"> </span>xloop
+
+<span class="c1"># via poetry</span>
+poetry<span class="w"> </span>add<span class="w"> </span>xloop
+</code></pre></div></td></tr></table></div>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>Helps document and centralizing settings in a python project/library.</p>
+<p>Facilitates looking up BaseSettings from <code>retrievers</code>, such as an environmental variable retriever.</p>
+<p>Converts and standardizes any retrieved values to the type-hint on the setting attribute (such as bool, int, datetime, etc).</p>
+<p>Interface to provide own custom retrievers, to grab settings/configuration from wherever you want.</p>
+<p>Retrievers can be stacked, so multiple ones can be consulted when retrieving a setting.</p>
+<h2 id="quick-start">Quick Start<a class="headerlink" href="#quick-start" title="Permanent link">&para;</a></h2>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">  1</span>
+<span class="normal">  2</span>
+<span class="normal">  3</span>
+<span class="normal">  4</span>
+<span class="normal">  5</span>
+<span class="normal">  6</span>
+<span class="normal">  7</span>
+<span class="normal">  8</span>
+<span class="normal">  9</span>
+<span class="normal"> 10</span>
+<span class="normal"> 11</span>
+<span class="normal"> 12</span>
+<span class="normal"> 13</span>
+<span class="normal"> 14</span>
+<span class="normal"> 15</span>
+<span class="normal"> 16</span>
+<span class="normal"> 17</span>
+<span class="normal"> 18</span>
+<span class="normal"> 19</span>
+<span class="normal"> 20</span>
+<span class="normal"> 21</span>
+<span class="normal"> 22</span>
+<span class="normal"> 23</span>
+<span class="normal"> 24</span>
+<span class="normal"> 25</span>
+<span class="normal"> 26</span>
+<span class="normal"> 27</span>
+<span class="normal"> 28</span>
+<span class="normal"> 29</span>
+<span class="normal"> 30</span>
+<span class="normal"> 31</span>
+<span class="normal"> 32</span>
+<span class="normal"> 33</span>
+<span class="normal"> 34</span>
+<span class="normal"> 35</span>
+<span class="normal"> 36</span>
+<span class="normal"> 37</span>
+<span class="normal"> 38</span>
+<span class="normal"> 39</span>
+<span class="normal"> 40</span>
+<span class="normal"> 41</span>
+<span class="normal"> 42</span>
+<span class="normal"> 43</span>
+<span class="normal"> 44</span>
+<span class="normal"> 45</span>
+<span class="normal"> 46</span>
+<span class="normal"> 47</span>
+<span class="normal"> 48</span>
+<span class="normal"> 49</span>
+<span class="normal"> 50</span>
+<span class="normal"> 51</span>
+<span class="normal"> 52</span>
+<span class="normal"> 53</span>
+<span class="normal"> 54</span>
+<span class="normal"> 55</span>
+<span class="normal"> 56</span>
+<span class="normal"> 57</span>
+<span class="normal"> 58</span>
+<span class="normal"> 59</span>
+<span class="normal"> 60</span>
+<span class="normal"> 61</span>
+<span class="normal"> 62</span>
+<span class="normal"> 63</span>
+<span class="normal"> 64</span>
+<span class="normal"> 65</span>
+<span class="normal"> 66</span>
+<span class="normal"> 67</span>
+<span class="normal"> 68</span>
+<span class="normal"> 69</span>
+<span class="normal"> 70</span>
+<span class="normal"> 71</span>
+<span class="normal"> 72</span>
+<span class="normal"> 73</span>
+<span class="normal"> 74</span>
+<span class="normal"> 75</span>
+<span class="normal"> 76</span>
+<span class="normal"> 77</span>
+<span class="normal"> 78</span>
+<span class="normal"> 79</span>
+<span class="normal"> 80</span>
+<span class="normal"> 81</span>
+<span class="normal"> 82</span>
+<span class="normal"> 83</span>
+<span class="normal"> 84</span>
+<span class="normal"> 85</span>
+<span class="normal"> 86</span>
+<span class="normal"> 87</span>
+<span class="normal"> 88</span>
+<span class="normal"> 89</span>
+<span class="normal"> 90</span>
+<span class="normal"> 91</span>
+<span class="normal"> 92</span>
+<span class="normal"> 93</span>
+<span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span>
+<span class="normal">117</span>
+<span class="normal">118</span>
+<span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">xsettings</span><span class="w"> </span><span class="kn">import</span> <span class="n">EnvVarSettings</span><span class="p">,</span> <span class="n">SettingsField</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">xsettings.errors</span><span class="w"> </span><span class="kn">import</span> <span class="n">SettingsValueError</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Optional</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">dataclasses</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+
+<span class="c1"># Used to showcase looking up env-vars automatically:</span>
+<span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;app_version&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;1.2.3&#39;</span>
+
+<span class="c1"># Used to showcase complex setting types:</span>
+<span class="nd">@dataclasses</span><span class="o">.</span><span class="n">dataclass</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">DBConfig</span><span class="p">:</span>
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">from_dict</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">values</span><span class="p">:</span> <span class="nb">dict</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">DBConfig</span><span class="p">(</span><span class="o">**</span><span class="n">values</span><span class="p">)</span>
+
+    <span class="n">user</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">host</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">password</span><span class="p">:</span> <span class="nb">str</span>
+
+
+<span class="c1"># Some defined settings:</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">MySettings</span><span class="p">(</span><span class="n">EnvVarSettings</span><span class="p">):</span>
+    <span class="n">app_env</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;dev&#39;</span>
+    <span class="n">app_version</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">api_endpoint_url</span><span class="p">:</span> <span class="nb">str</span>
+
+    <span class="n">some_number</span><span class="p">:</span> <span class="nb">int</span>
+
+    <span class="c1"># For Full Customization, allocate SettingsField,</span>
+    <span class="c1"># In this case an alternate setting lookup-name</span>
+    <span class="c1"># if you want the attribute name to differ from lookup name:</span>
+    <span class="n">token</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="n">SettingsField</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;API_TOKEN&#39;</span><span class="p">)</span>
+
+    <span class="c1"># Or if you wanted a custom-converter for a more complex obj:</span>
+    <span class="n">db_config</span><span class="p">:</span> <span class="n">DBConfig</span> <span class="o">=</span> <span class="n">SettingsField</span><span class="p">(</span>
+        <span class="n">converter</span><span class="o">=</span><span class="n">DBConfig</span><span class="o">.</span><span class="n">from_dict</span>
+    <span class="p">)</span>
+
+<span class="c1"># BaseSettings subclasses are singleton-like dependencies that are</span>
+<span class="c1"># also injectables and lazily-created on first-use.</span>
+<span class="c1"># YOu can use a special `BaseSettings.grab()` class-method to</span>
+<span class="c1"># get the current settings object.</span>
+<span class="c1">#</span>
+<span class="c1"># So you can grab the current MySettings object lazily via</span>
+<span class="c1"># its `grab` class method:</span>
+<span class="n">MySettings</span><span class="o">.</span><span class="n">grab</span><span class="p">()</span><span class="o">.</span><span class="n">some_number</span> <span class="o">=</span> <span class="mi">3</span>
+
+<span class="k">assert</span> <span class="n">MySettings</span><span class="o">.</span><span class="n">grab</span><span class="p">()</span><span class="o">.</span><span class="n">some_number</span> <span class="o">==</span> <span class="mi">3</span>
+
+<span class="c1"># You can also use a proxy-object, it will lookup and use</span>
+<span class="c1"># the current settings object each time its used:</span>
+<span class="n">my_settings</span> <span class="o">=</span> <span class="n">MySettings</span><span class="o">.</span><span class="n">proxy</span><span class="p">()</span>
+
+<span class="c1"># Here I showcase setting a dict here and using the converter</span>
+<span class="c1"># I defined on the SettingsField to convert it for me:</span>
+<span class="n">my_settings</span><span class="o">.</span><span class="n">db_config</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;user&#39;</span><span class="p">:</span> <span class="s1">&#39;my-user&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;password&#39;</span><span class="p">:</span> <span class="s1">&#39;my-password&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;host&#39;</span><span class="p">:</span> <span class="s1">&#39;my-host&#39;</span>
+<span class="p">}</span>
+
+
+<span class="n">expected</span> <span class="o">=</span> <span class="n">DBConfig</span><span class="p">(</span>
+    <span class="n">user</span><span class="o">=</span><span class="s1">&#39;my-user&#39;</span><span class="p">,</span>
+    <span class="n">password</span><span class="o">=</span><span class="s1">&#39;my-password&#39;</span><span class="p">,</span>
+    <span class="n">host</span><span class="o">=</span><span class="s1">&#39;my-host&#39;</span>
+<span class="p">)</span>
+
+<span class="c1"># The dict gets converted automatically to the DBConfig obj:</span>
+<span class="k">assert</span> <span class="n">MySettings</span><span class="o">.</span><span class="n">grab</span><span class="p">()</span><span class="o">.</span><span class="n">db_config</span> <span class="o">==</span> <span class="n">expected</span>
+
+<span class="c1"># If you set a setting with the same/exact type as</span>
+<span class="c1"># it&#39;s type-hint, then it won&#39;t call the converter:</span>
+<span class="n">my_settings</span><span class="o">.</span><span class="n">db_config</span> <span class="o">=</span> <span class="n">expected</span>
+
+<span class="c1"># It&#39;s the same exact object-instance still (ie: not changed/converted):</span>
+<span class="k">assert</span> <span class="n">my_settings</span><span class="o">.</span><span class="n">db_config</span> <span class="ow">is</span> <span class="n">expected</span>
+
+
+<span class="c1"># Will use the default value of `dev` (default value on class)</span>
+<span class="c1"># since it was not set to anything else and there is no env-var for it:</span>
+<span class="k">assert</span> <span class="n">my_settings</span><span class="o">.</span><span class="n">app_env</span> <span class="o">==</span> <span class="s1">&#39;dev&#39;</span>
+
+<span class="c1"># EnvVarSettings (superclass) is configured to use the EnvVar retriever,</span>
+<span class="c1"># and so it will find this in the environmental vars since it was not</span>
+<span class="c1"># explicitly set to anything on settings object:</span>
+<span class="k">assert</span> <span class="n">my_settings</span><span class="o">.</span><span class="n">app_version</span> <span class="o">==</span> <span class="s1">&#39;1.2.3&#39;</span>
+
+<span class="c1"># Any BaseSettings subclass can use dependency-injection:</span>
+<span class="k">assert</span> <span class="n">my_settings</span><span class="o">.</span><span class="n">token</span> <span class="ow">is</span> <span class="kc">None</span>
+
+<span class="k">with</span> <span class="n">MySettings</span><span class="p">(</span><span class="n">token</span><span class="o">=</span><span class="s1">&#39;my-token&#39;</span><span class="p">):</span>
+    <span class="k">assert</span> <span class="n">my_settings</span><span class="o">.</span><span class="n">token</span> <span class="o">==</span> <span class="s1">&#39;my-token&#39;</span>
+
+    <span class="c1"># Parent is still consulted for any settings unset on child but set on parent:</span>
+    <span class="k">assert</span> <span class="n">my_settings</span><span class="o">.</span><span class="n">db_config</span> <span class="o">==</span> <span class="n">expected</span>
+
+    <span class="c1"># Can set settings like you expect,</span>
+    <span class="c1"># this will go into the child created in above `with` statement:</span>
+    <span class="n">my_settings</span><span class="o">.</span><span class="n">app_env</span> <span class="o">=</span> <span class="s1">&#39;prod&#39;</span>
+
+    <span class="k">assert</span> <span class="n">my_settings</span><span class="o">.</span><span class="n">app_env</span> <span class="o">==</span> <span class="s1">&#39;prod&#39;</span>
+
+<span class="c1"># After `with` child is not the current settings object anymore,</span>
+<span class="c1"># reverts back to what it was before:</span>
+<span class="k">assert</span> <span class="n">my_settings</span><span class="o">.</span><span class="n">token</span> <span class="ow">is</span> <span class="kc">None</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="c1"># If a setting is undefined and required (ie: not-optional),</span>
+    <span class="c1"># and it was not set to anything nor is there a default or an env-var for it;</span>
+    <span class="c1"># BaseSettings will raise an exception when getting it:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">my_settings</span><span class="o">.</span><span class="n">api_endpoint_url</span><span class="p">)</span>
+<span class="k">except</span> <span class="n">SettingsValueError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="k">assert</span> <span class="kc">True</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">assert</span> <span class="kc">False</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="c1"># `SettingsValueError` inherits from both AttributeError and ValueError,</span>
+    <span class="c1"># as the error could be due to either aspect; so you can also do an except</span>
+    <span class="c1"># for either standard error:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">my_settings</span><span class="o">.</span><span class="n">api_endpoint_url</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="k">assert</span> <span class="kc">True</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">assert</span> <span class="kc">False</span>
+</code></pre></div></td></tr></table></div>
+<h1 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h1>
+<p>The settings library is seperated into a few core components.</p>
+<ul>
+<li>BaseSettings</li>
+<li>SettingsField</li>
+<li>SettingsRetrieverProtocol</li>
+</ul>
+<h1 id="basesettings">BaseSettings<a class="headerlink" href="#basesettings" title="Permanent link">&para;</a></h1>
+<p>This is the core class that BaseSettings implementations will inherit from.
+BaseSettings can be used as source for external settings / variables that a given 
+application / library needs in order to function. It provides future
+developers an easy way to see what these external variables are and
+where they are derived from.</p>
+<p>In its simplest form a BaseSettings class implementation is simply a class 
+similar to a <code>@dataclass</code> that inherits from a given BaseSettings base class. </p>
+<p>Example BaseSettings File</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">xsettings</span><span class="w"> </span><span class="kn">import</span> <span class="n">BaseSettings</span><span class="p">,</span> <span class="n">SettingsField</span>
+
+
+<span class="k">class</span><span class="w"> </span><span class="nc">MySettings</span><span class="p">(</span><span class="n">BaseSettings</span><span class="p">):</span>
+    <span class="n">a</span><span class="p">:</span> <span class="nb">int</span>
+    <span class="n">b</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="s2">&quot;1&quot;</span>
+
+    <span class="c1"># For Full Customization, allocate SettingsField:</span>
+    <span class="n">d</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">SettingsField</span><span class="p">(</span><span class="o">...</span><span class="p">)</span> 
+</code></pre></div></td></tr></table></div>
+<p>Each of these attributes will be converted to a SettingsField object to
+control future value lookup. Each part on the attribute (name, type_hint, 
+default_value) will be reflected in the SettingsField. If you want more
+customization you can set a SettingsField() as your default value and the
+fields set in that will be overridden in the main SettingsField object.</p>
+<h2 id="basesettings-usage">BaseSettings usage<a class="headerlink" href="#basesettings-usage" title="Permanent link">&para;</a></h2>
+<h3 id="classlazy-attribute-lookup">Class/Lazy Attribute Lookup<a class="headerlink" href="#classlazy-attribute-lookup" title="Permanent link">&para;</a></h3>
+<p>Referencing the attribute at the class level will return a <code>SettingsClassProperty</code>
+rather than a SettingsField (or the default value). This is useful when you want
+to do property chaining, or you want to use a property as a property in another
+class</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">xsettings</span><span class="w"> </span><span class="kn">import</span> <span class="n">BaseSettings</span><span class="p">,</span> <span class="n">EnvVarSettings</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+
+
+<span class="k">class</span><span class="w"> </span><span class="nc">MySettings</span><span class="p">(</span><span class="n">BaseSettings</span><span class="p">):</span>
+    <span class="n">table_name</span><span class="p">:</span> <span class="nb">str</span>
+
+
+<span class="n">MySettings</span><span class="o">.</span><span class="n">grab</span><span class="p">()</span><span class="o">.</span><span class="n">table_name</span> <span class="o">=</span> <span class="s2">&quot;the-t-name&quot;</span>
+
+
+<span class="k">class</span><span class="w"> </span><span class="nc">MyTable</span><span class="p">:</span>
+    <span class="k">class</span><span class="w"> </span><span class="nc">Meta</span><span class="p">:</span>
+        <span class="c1">#  Here, we set a forward-ref class property</span>
+        <span class="c1">#  to be whatever the current setting of `MySettings.table_name`</span>
+        <span class="c1">#  will be (it&#39;s a property and will look it up each time</span>
+        <span class="c1">#  its asked for).</span>
+        <span class="n">table_name</span> <span class="o">=</span> <span class="n">MySettings</span><span class="o">.</span><span class="n">table_name</span>
+
+
+<span class="c1"># Forward-ref is resolved via lazy-forward-ref,</span>
+<span class="c1"># each time it&#39;s asked for:</span>
+<span class="k">assert</span> <span class="n">MyTable</span><span class="o">.</span><span class="n">Meta</span><span class="o">.</span><span class="n">table_name</span> <span class="o">==</span> <span class="s1">&#39;the-t-name&#39;</span>
+
+<span class="k">with</span> <span class="n">MySettings</span><span class="p">(</span><span class="n">table_name</span><span class="o">=</span><span class="s1">&#39;alt-table-name&#39;</span><span class="p">):</span>
+    <span class="k">assert</span> <span class="n">MyTable</span><span class="o">.</span><span class="n">Meta</span><span class="o">.</span><span class="n">table_name</span> <span class="o">==</span> <span class="s1">&#39;alt-table-name&#39;</span>
+
+
+<span class="c1"># Inherit from EnvVarSettings, so it will retrieve our settings</span>
+<span class="c1"># via environmental variables</span>
+<span class="c1"># (will use env-vars on-demand if value is not set directly on it).</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">MyEnvSettings</span><span class="p">(</span><span class="n">EnvVarSettings</span><span class="p">):</span>
+    <span class="n">my_table_name</span><span class="p">:</span> <span class="nb">str</span>
+
+
+<span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;MY_TABLE_NAME&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;env-table-name&#39;</span>
+
+<span class="c1">#  We can directly set the setting on MySettings to a lazy-prop-ref</span>
+<span class="c1">#  and so now this setting will reflect what&#39;s the current value</span>
+<span class="c1">#  in `MyEnvSettings.my_table_name` is; and `MyEnvSettings` will</span>
+<span class="c1">#  retrieve its value from environmental variables</span>
+<span class="c1">#  since it inherits from `EnvVarSettings`.</span>
+<span class="c1">#  </span>
+<span class="n">MySettings</span><span class="o">.</span><span class="n">grab</span><span class="p">()</span><span class="o">.</span><span class="n">table_name</span> <span class="o">=</span> <span class="n">MyEnvSettings</span><span class="o">.</span><span class="n">my_table_name</span>
+
+<span class="k">assert</span> <span class="n">MySettings</span><span class="o">.</span><span class="n">grab</span><span class="p">()</span><span class="o">.</span><span class="n">table_name</span> <span class="o">==</span> <span class="s1">&#39;env-table-name&#39;</span>
+
+
+<span class="c1"># Example 3, default value of settings field can be a lazy-property-ref</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">MyOtherSettings</span><span class="p">(</span><span class="n">BaseSettings</span><span class="p">):</span>
+    <span class="n">my_setting_attr</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">MyEnvSettings</span><span class="o">.</span><span class="n">my_table_name</span>
+
+
+<span class="n">my_other_settings</span> <span class="o">=</span> <span class="n">MyOtherSettings</span><span class="o">.</span><span class="n">proxy</span><span class="p">()</span>
+<span class="k">assert</span> <span class="n">my_other_settings</span><span class="o">.</span><span class="n">my_setting_attr</span> <span class="o">==</span> <span class="s1">&#39;env-table-name&#39;</span>
+
+<span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;MY_TABLE_NAME&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;env-table-2&#39;</span>
+<span class="k">assert</span> <span class="n">my_other_settings</span><span class="o">.</span><span class="n">my_setting_attr</span> <span class="o">==</span> <span class="s1">&#39;env-table-2&#39;</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="change-default-value">Change Default Value<a class="headerlink" href="#change-default-value" title="Permanent link">&para;</a></h3>
+<p>You can now (as of v1.3) change the default value on an already created BaseSettings subclass:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">xsettings</span><span class="w"> </span><span class="kn">import</span> <span class="n">BaseSettings</span><span class="p">,</span> <span class="n">SettingsField</span>
+
+
+<span class="k">class</span><span class="w"> </span><span class="nc">MySettings</span><span class="p">(</span><span class="n">BaseSettings</span><span class="p">):</span>
+    <span class="n">a</span><span class="p">:</span> <span class="nb">int</span>
+    <span class="n">b</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">1</span>
+
+
+<span class="c1"># Change default value later on;</span>
+<span class="c1"># Now the `MySettings.a` will have a</span>
+<span class="c1"># default/fallback value of `2`:</span>
+<span class="n">MySettings</span><span class="o">.</span><span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
+
+
+<span class="k">class</span><span class="w"> </span><span class="nc">MyOtherSettings</span><span class="p">(</span><span class="n">BaseSettings</span><span class="p">):</span>
+    <span class="n">some_other_setting</span><span class="p">:</span> <span class="nb">str</span>
+
+
+<span class="c1"># You can also set a lazy-ref as setting field&#39;s</span>
+<span class="c1"># default value after it&#39;s class is created.</span>
+<span class="c1"># (also if the type-hint&#39;s don&#39;t match it will convert</span>
+<span class="c1">#  the value as needed like you would expect.</span>
+<span class="n">MyOtherSettings</span><span class="o">.</span><span class="n">some_other_setting</span> <span class="o">=</span> <span class="n">MySettings</span><span class="o">.</span><span class="n">b</span>
+
+<span class="c1"># It&#39;s a str now, since `MyOtherSettings.some_other_setting`</span>
+<span class="c1"># has a str typehint:</span>
+<span class="k">assert</span> <span class="n">MyOtherSettings</span><span class="o">.</span><span class="n">grab</span><span class="p">()</span><span class="o">.</span><span class="n">some_other_setting</span> <span class="o">==</span> <span class="s1">&#39;1&#39;</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="setting-new-setting-on-class-attributes">Setting New Setting on Class Attributes<a class="headerlink" href="#setting-new-setting-on-class-attributes" title="Permanent link">&para;</a></h3>
+<p>You can't create new settings attributes/fields on a BaseSettings subclass after the class
+is created (only during class creation).</p>
+<p>You can set/change the default value for an existing settings attribute by simply assigning
+to it as a class attribute (see topic <a href="#change-default-value">Change Default Value</a>).</p>
+<h3 id="class-instance-attribute-lookup">Class Instance Attribute lookup<a class="headerlink" href="#class-instance-attribute-lookup" title="Permanent link">&para;</a></h3>
+<p>Setting classes inherit from <code>1xinject.Dependency</code> and as such are considered singletons.
+Instances should not be created. Instead, to access an instance you should do
+<code>MySettings.grab()</code>; or you can use an <code>MySettings.proxy()</code>, ie:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">my_settings</span> <span class="o">=</span> <span class="n">MySettings</span><span class="o">.</span><span class="n">proxy</span><span class="p">()</span>
+
+<span class="c1"># Can use `my_settings` just like `MySettings.grab().table_name`,</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_settings</span><span class="o">.</span><span class="n">table_name</span><span class="p">)</span>
+
+<span class="c1"># You can also import the `my_settings` proxy into other modules,</span>
+<span class="c1"># for use elsewhere.</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">my_project.settings</span><span class="w"> </span><span class="kn">import</span> <span class="n">my_settings</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_settings</span><span class="o">.</span><span class="n">table_name</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p>Proxies are directly importable into other files, the proxy will lookup the current
+dependency/singletone instance every time you access it for normal attributes and methods
+(anything starting with a <code>_</code>/underscore is not proxied).</p>
+<p>To lookup the value of a given settings simply reference it on the Singleton
+instance via <code>MySettings.grab().table_name</code>. This will cause a lookup
+to happen.</p>
+<h3 id="inheriting-from-plain-classes">Inheriting from Plain Classes<a class="headerlink" href="#inheriting-from-plain-classes" title="Permanent link">&para;</a></h3>
+<p>Currently, there is a something to watch out for when you also inherit from a plain class
+for you BaseSettings subclass.</p>
+<p>For now, we treat all plain super-class values on attributes as-if they were directly assigned
+to the settings instance; ie: we will NOT try to 'retrieve' the value unless the value is
+set to <code>xsentinels.Default</code> in either the instance or superclass (whatever value it finds via normal
+python attribute retrieval rules).</p>
+<p>You can use <code>xsentinels.Default</code> to force BaseSettings to lookup the value and/or use its default value if it
+has one.</p>
+<p>May in the future create a v2 of xsettings someday that will look at attributes directly
+assigned to self, then and retrieved value, then any plain super-class set value.</p>
+<p>(For a more clear example of this, see unit test method <code>test_super_class_with_default_value_uses_retriever</code>)</p>
+<h1 id="settingsfield">SettingsField<a class="headerlink" href="#settingsfield" title="Permanent link">&para;</a></h1>
+<p>Provides value lookup configuration and functionality. It controls
+how a source value is retrieved <code>xsettings.fields.SettingsField.retriever</code> and
+converted <code>xsettings.fields.SettingsField.converter</code>.</p>
+<p>If there is not SettingsField used/generated for an attribute,
+then it's just a normal attribute.</p>
+<p>No special features of the BaseSettings class such as lazy/forward-references will work with them.</p>
+<h2 id="how-settingsfield-is-generated">How SettingsField is Generated<a class="headerlink" href="#how-settingsfield-is-generated" title="Permanent link">&para;</a></h2>
+<p>Right now, a SettingsField is only automatically generated for annotated attributes.</p>
+<p>Also, one is generated for any <code>@property</code> functions
+(you must define a return type-hint for property).</p>
+<p>Normal functions currently DO NOT generate a field, also attributes without a type annotation
+will also not automatically be generated.</p>
+<p>Anything starting with an <code>_</code> will not have a field generated for it,
+they are for use by properties/methods on the class and work like normal.</p>
+<p>You can also generate your own SettingsField with custom options by creating
+one and setting it on a class attribute, during the class creation process.</p>
+<p>After a class is created, you can't change or add SettingFields to it anymore, currently.</p>
+<p>Examples:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">xsettings</span><span class="w"> </span><span class="kn">import</span> <span class="n">BaseSettings</span><span class="p">,</span> <span class="n">SettingsField</span>
+
+
+<span class="k">class</span><span class="w"> </span><span class="nc">MySettings</span><span class="p">(</span><span class="n">BaseSettings</span><span class="p">):</span>
+    <span class="n">custom_field</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">SettingsField</span><span class="p">(</span><span class="n">required</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+    <span class="c1"># SettingsField auto-generated for `a`:</span>
+    <span class="n">a</span><span class="p">:</span> <span class="nb">str</span>
+
+    <span class="c1"># A Field is generated for `b`, the type-hint will be `type(2)`.</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="mi">2</span>
+
+    <span class="c1"># A field is NOT generated for anything that starts with an underscore (`_`),</span>
+    <span class="c1"># They are considered internal attributes, and no Field is ever generated for them.</span>
+    <span class="n">_some_private_attr</span> <span class="o">=</span> <span class="mi">4</span>
+
+    <span class="c1"># Field generated for `my_property`, it will be the fields &#39;retriever&#39;.</span>
+    <span class="nd">@property</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">my_property</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;hello&quot;</span>
+
+    <span class="c1"># No field is generated for `normal_method`:</span>
+    <span class="c1"># Currently, any directly callable object/function as a class attribute value</span>
+    <span class="c1"># will never allow you to have a Field generated for it.</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">normal_method</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">pass</span>
+</code></pre></div></td></tr></table></div>
+<h1 id="converters">Converters<a class="headerlink" href="#converters" title="Permanent link">&para;</a></h1>
+<p>When BaseSettings gets a value due to someone asking for an attribute on it's self, it will
+attempt to convert the value if the value does not match the type-hint.</p>
+<p>To find a converter, we check these in order, first one found is what we use:</p>
+<ol>
+<li>We first check <code>self.converter</code>.</li>
+<li>Next, <a href="api/xsettings/default_converters.html#xsettings.default_converters.DEFAULT_CONVERTERS" target="_blank"><code>DEFAULT_CONVERTERS</code></a></li>
+<li>Finally, we fall back to using the type-hint (ie: <code>int(value)</code> or <code>str(value)</code>).<ul>
+<li>This also enables types that inherit from <code>Enum</code> to work:<br />
+  ie: plain values will be converted into one of the enum's values.</li>
+</ul>
+</li>
+</ol>
+<p>If the retrieved value does not match the type-hint, it will run the converter by calling
+it and passing the value to convert. The value to convert is whatever value was set,
+retrieved. It can also be the field's default-value if noting is set/retreived.</p>
+<h1 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h1>
+<h2 id="supports-read-only-properties">Supports Read-Only Properties<a class="headerlink" href="#supports-read-only-properties" title="Permanent link">&para;</a></h2>
+<p>The BaseSettings class also supports read-only properties, they are placed in a SettingField's
+retriever (ie: <code>xsettings.fields.SettingField.retriever</code>).</p>
+<p>When you access a value from a read-only property, when the value needs to be retrieved,
+it will use the property as a way to fetch the 'storage' aspect of the field/attribute.</p>
+<p>All other aspects of the process behave as it would for any other field.</p>
+<p>This means in particular, after the field returns its value BaseSettings will check the returned values
+type against the field's type_hint, and if needed will convert it if needed before handing it to 
+the thing that originally requested the attribute/value.</p>
+<p>It also means that, if the BaseSettings instance has a plain-value directly assigned to it,
+that value will be used and the property will not be called at all
+(since no value needs to be 'retrieved').</p>
+<p>In effect, the property getter will only be called if a retrieved value is needed for the
+attribute.</p>
+<p>Here is an example below. Notice I have a type-hint for the return-type of the property.
+This is used if there is no type-annotation defined for the field.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">xsettings</span><span class="w"> </span><span class="kn">import</span> <span class="n">BaseSettings</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">decimal</span><span class="w"> </span><span class="kn">import</span> <span class="n">Decimal</span>
+
+
+<span class="k">class</span><span class="w"> </span><span class="nc">MySettings</span><span class="p">(</span><span class="n">BaseSettings</span><span class="p">):</span>
+    <span class="nd">@property</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">some_setting</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Decimal</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;1.34&quot;</span>
+
+
+<span class="k">assert</span> <span class="n">MySettings</span><span class="o">.</span><span class="n">grab</span><span class="p">()</span><span class="o">.</span><span class="n">some_setting</span> <span class="o">==</span> <span class="n">Decimal</span><span class="p">(</span><span class="s2">&quot;1.34&quot;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p>You can also define a type-annotation at the class level for the property like so:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">xsettings</span><span class="w"> </span><span class="kn">import</span> <span class="n">BaseSettings</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">decimal</span><span class="w"> </span><span class="kn">import</span> <span class="n">Decimal</span>
+
+
+<span class="k">class</span><span class="w"> </span><span class="nc">MySettings</span><span class="p">(</span><span class="n">BaseSettings</span><span class="p">):</span>
+    <span class="c1"># Does not matter if this is before or after the property,</span>
+    <span class="c1"># Python stores type annotations in a separate area</span>
+    <span class="c1"># vs normal class attribute values in Python.</span>
+    <span class="n">some_setting</span><span class="p">:</span> <span class="n">Decimal</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">some_setting</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;1.34&quot;</span>
+
+
+<span class="k">assert</span> <span class="n">MySettings</span><span class="o">.</span><span class="n">grab</span><span class="p">()</span><span class="o">.</span><span class="n">some_setting</span> <span class="o">==</span> <span class="n">Decimal</span><span class="p">(</span><span class="s2">&quot;1.34&quot;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="getter-properties-supported-as-a-forwardlazy-reference">Getter Properties Supported as a Forward/Lazy-Reference<a class="headerlink" href="#getter-properties-supported-as-a-forwardlazy-reference" title="Permanent link">&para;</a></h2>
+<p>You can get a forward-ref for a property field on a BaseSettings class,
+just like any other field attribute on a BaseSettings class:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">xsettings</span><span class="w"> </span><span class="kn">import</span> <span class="n">BaseSettings</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">decimal</span><span class="w"> </span><span class="kn">import</span> <span class="n">Decimal</span>
+
+
+<span class="k">class</span><span class="w"> </span><span class="nc">MySettings</span><span class="p">(</span><span class="n">BaseSettings</span><span class="p">):</span>
+    <span class="c1"># Does not matter if this is before or after the property,</span>
+    <span class="c1"># Python stores type annotations in a separate area</span>
+    <span class="c1"># vs normal class attribute values in Python.</span>
+    <span class="n">some_setting</span><span class="p">:</span> <span class="n">Decimal</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">some_setting</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Decimal</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;1.34&quot;</span>
+
+
+<span class="k">class</span><span class="w"> </span><span class="nc">OtherSettings</span><span class="p">(</span><span class="n">BaseSettings</span><span class="p">):</span>
+    <span class="n">other_setting</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">MySettings</span><span class="o">.</span><span class="n">some_setting</span>
+
+
+<span class="k">assert</span> <span class="n">OtherSettings</span><span class="o">.</span><span class="n">grab</span><span class="p">()</span><span class="o">.</span><span class="n">other_setting</span> <span class="o">==</span> <span class="s2">&quot;1.34&quot;</span>
+</code></pre></div></td></tr></table></div>
+<p>In the example above, I also illustrate that a forward-ref will still pay-attention
+to the type-hint assigned to the field. It's still converted as you would expect,
+in this case we convert a Decimal object into a str object when the value for
+<code>other_setting</code> is asked for.</p>
+<h2 id="getter-property-with-custom-settingsfield">Getter Property with Custom SettingsField<a class="headerlink" href="#getter-property-with-custom-settingsfield" title="Permanent link">&para;</a></h2>
+<p>You can also specify a custom SettingsField and still use a property with it.
+Below is an example. See <code>xsettings.fields.SettingsField.getter</code> for more details.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">xsettings</span><span class="w"> </span><span class="kn">import</span> <span class="n">BaseSettings</span><span class="p">,</span> <span class="n">SettingsField</span>
+
+
+<span class="k">class</span><span class="w"> </span><span class="nc">MySettings</span><span class="p">(</span><span class="n">BaseSettings</span><span class="p">):</span>
+    <span class="c1"># Does not matter if this is before or after the property,</span>
+    <span class="c1"># Python stores type annotations in a separate area</span>
+    <span class="c1"># vs normal class attribute values in</span>
+    <span class="c1"># Python.</span>
+    <span class="n">some_setting</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">SettingsField</span><span class="p">(</span><span class="n">required</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+    <span class="nd">@some_setting</span><span class="o">.</span><span class="n">getter</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">some_setting</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;1.36&quot;</span>
+
+
+<span class="k">assert</span> <span class="n">MySettings</span><span class="o">.</span><span class="n">grab</span><span class="p">()</span><span class="o">.</span><span class="n">some_setting</span> <span class="o">==</span> <span class="s2">&quot;1.36&quot;</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="setter-properties-currently-unsupported">Setter Properties Currently Unsupported<a class="headerlink" href="#setter-properties-currently-unsupported" title="Permanent link">&para;</a></h2>
+<p>You can't currently have a setter defined for a property on a class.
+This is something we CAN support without too much trouble, but have decided to
+put off for a future, if we end up wanting to do it.</p>
+<p>If you define a setter property on a BaseSettings class, it will currently raise an error.</p>
+<h1 id="settingsretriever">SettingsRetriever<a class="headerlink" href="#settingsretriever" title="Permanent link">&para;</a></h1>
+<p>Its responsibility is providing functionality to retrieve a variable from 
+some sort of variable store.</p>
+<p>The
+<a href="api/xsettings/retreivers.html#xsettings.retreivers.SettingsRetrieverProtocol" target="_blank"><code>SettingsRetrieverProtocol</code></a>
+provides the callable protocol.</p>
+<p>You can set a default-retriever to be used as a fallback if 
+no other value is set or other non-default retrievers can't find a value
+by using a class-argument like so:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">xsettings</span><span class="w"> </span><span class="kn">import</span> <span class="n">BaseSettings</span>
+
+
+<span class="k">class</span><span class="w"> </span><span class="nc">MySettings</span><span class="p">(</span><span class="n">BaseSettings</span><span class="p">,</span> <span class="n">default_retrievers</span><span class="o">=</span><span class="n">my_retriever</span><span class="p">):</span>
+    <span class="n">some_setting</span><span class="p">:</span> <span class="nb">str</span>
+</code></pre></div></td></tr></table></div>
+<h1 id="how-setting-field-values-are-resolved">How Setting Field Values Are Resolved<a class="headerlink" href="#how-setting-field-values-are-resolved" title="Permanent link">&para;</a></h1>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
+<p>In General, this order is how things are resolved with more detail
+to follow:</p>
+<ol>
+<li>Value set directly on Setting-subclass instance.</li>
+<li>via <code>MySettings.grab().some_setting = 'some-set-value</code></li>
+<li>Value set on a parent-instance in <a href="api/xinject/context.html#xinject.context.XContext.dependency_chain" target="_blank"><code>XContext.dependency_chain(for_type=SettingsSubclass)</code></a>.</li>
+<li>BaseSettings can be used as context-managers via <code>with</code> and decorators <code>@</code>.</li>
+<li>When a new BaseSettings instance is activated via decorator/with and previously active setting is in it's parent-chain
+     which is resolved via it's dependency-chain
+     (<a href="api/xinject/context.html#xinject.context.XContext.dependency_chain" target="_blank"><code>XContext.grab().dependency_chain(for_type=SettingsSubclass)</code></a>).</li>
+<li>Example: <code>with MySetting(some_setting='parent-value'):</code></li>
+<li>Retrievers are consulted next.<ol>
+<li>First, retriever set directly on field <code>xsettings.fields.SettingsField.retriever</code>.</li>
+<li>This can include any field properties <code>@property</code>, as they are set as the field retriever.</li>
+<li>Next, instance retriever(s) set directly on the Setting object that is being asked for its field value is checked.</li>
+<li>via <a href="api/xsettings/settings.html#xsettings.settings.Settings.settings__instance_retrievers" target="_blank"><code>BaseSettings.add_instance_retrievers</code></a>.</li>
+<li>Then any instance-retrievers in the dependency-chain are checked next (see step 2 above for more details).</li>
+<li>Default-retrievers assigned to the class(es) are next checked, in <code>mro</code> order (ie: parent/super-classes are checked last).</li>
+</ol>
+</li>
+<li>Finally, any default-value for the field is consulted.<ul>
+<li>If the default-value is a property, or forward-ref then that is followed.</li>
+<li>ie: <code>BaseSettings.some_attr = OtherSettings.another_attr_to_forward_ref_with</code></li>
+<li>This ^ will change the default value for <code>some_attr</code> to a forward-ref from another BaseSettings class.</li>
+</ul>
+</li>
+</ol>
+<p>Keep in mind that generally, if a value is a <code>property</code> (including forward-refs, which are also properties),
+they are followed via the standard <code>__get__</code> mechanism (see earlier in document for forward-ref details).</p>
+<p>You can add </p>
+<h2 id="resolution-details">Resolution Details<a class="headerlink" href="#resolution-details" title="Permanent link">&para;</a></h2>
+<p>Values set directly on Setting instances are first checked for and used if one is found.
+Checks self first, if not found will next check
+<a href="api/xinject/context.html#xinject.context.XContext.dependency_chain" target="_blank"><code>XContext.grab().dependency_chain(for_type=SettingsSubclass)</code></a>
+(returns a list of each instance currently in the dependency-chain, each one is checked in order; see link for details).</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">xsettings</span><span class="w"> </span><span class="kn">import</span> <span class="n">BaseSettings</span><span class="p">,</span> <span class="n">SettingsField</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">my_retriever</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">field</span><span class="p">:</span> <span class="n">SettingsField</span><span class="p">,</span> <span class="n">settings</span><span class="p">:</span> <span class="n">BaseSettings</span><span class="p">):</span>
+    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;retrieved-</span><span class="si">{</span><span class="n">field</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span>
+
+
+<span class="k">class</span><span class="w"> </span><span class="nc">MySettings</span><span class="p">(</span><span class="n">BaseSettings</span><span class="p">,</span> <span class="n">default_retrievers</span><span class="o">=</span><span class="n">my_retriever</span><span class="p">):</span>
+    <span class="n">some_setting</span><span class="p">:</span> <span class="nb">str</span>
+
+
+<span class="k">assert</span> <span class="n">MySettings</span><span class="o">.</span><span class="n">grab</span><span class="p">()</span><span class="o">.</span><span class="n">some_setting</span> <span class="o">==</span> <span class="s1">&#39;retrieved-some_setting&#39;</span>
+</code></pre></div></td></tr></table></div>
+<p>If value can't be found the retrievers are next checked.</p>
+<p>Retrievers are tried in a specific order, the first one with a non-None retrieved value
+is the one that is used.</p>
+<p>After the individual field retrievers are consulted, instance retrievers are checked next
+before finally checking the default-retrievers for the entire class.</p>
+<p>You can also add one or more retrievers to this <code>instance</code> of settings via the
+<a href="api/xsettings/settings.html#xsettings.settings.Settings.add_instance_retrievers" target="_blank"><code>BaseSettings.add_instance_retrievers</code></a>
+method (won't modify default_retrievers for the entire class, only modifies this specific instance).</p>
+<p>They are checked in the order added.</p>
+<p>Child dependencies (of the same exactly class/type) in the
+<a href="api/xinject/context.html#xinject.context.XContext.dependency_chain" target="_blank"><code>XContext.dependency_chain(for_type=SettingsSubclass)</code></a>
+will also check these instance-retrievers.</p>
+<p>The dependency chain is checked in the expected order of first consulting self,
+ then the chain in most recent parent first order.</p>
+<p>For more details on how parent/child dependencies work see
+<a href="api/xinject/context.html#xinject.context.XContext.dependency_chain" target="_blank"><code>XContext.dependency_chain</code></a>.</p>
+<p>After the dependency-chain is checked, the default-retrievers are checked
+in python's <code>mro</code> (method-resolution-order), checking its own class first
+before checking any super-classes for default-retrievers.</p>
+<h2 id="callable-defaults">Callable Defaults<a class="headerlink" href="#callable-defaults" title="Permanent link">&para;</a></h2>
+<p>If a default value is callable, when a default value is needed during field value resolution,
+it will be called without any arguments and the returned value will be used.</p>
+<p>Example:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># todo: Think about a mutable callable default (such as list) with this feature...</span>
+</code></pre></div></td></tr></table></div>
+<h1 id="things-to-watch-out-for">Things to Watch Out For<a class="headerlink" href="#things-to-watch-out-for" title="Permanent link">&para;</a></h1>
+<ul>
+<li>If a field has not type-hint, but does have a normal (non-property) default-value,
+  The type of the default-value will be used for type-hint.</li>
+<li>If a field has no converter, it will use the type-hint as the converter by default.</li>
+<li>Every field must have a type-hint, otherwise an exception will be raised.</li>
+</ul>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    2026-03-27
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.sections", "navigation.expand", "navigation.top", "navigation.indexes", "navigation.tracking", "content.code.annotate"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
