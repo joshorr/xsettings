@@ -19,11 +19,11 @@ Interface to provide own custom retrievers, to grab settings/configuration from 
 
 Retrievers can be stacked, so multiple ones can be consulted when retrieving a setting.
 
-See **[xsettings docs](https://xyngular.github.io/py-xsettings/latest/)**.
+See **[xsettings docs](https://joshorr.github.io/py-xsettings/latest/)**.
 
 # Documentation
 
-**[📄 Detailed Documentation](https://xyngular.github.io/py-xsettings/latest/)** | **[🐍 PyPi](https://pypi.org/project/xsettings/)**
+**[📄 Detailed Documentation](https://joshorr.github.io/py-xsettings/latest/)** | **[🐍 PyPi](https://pypi.org/project/xsettings/)**
 
 # Install
 

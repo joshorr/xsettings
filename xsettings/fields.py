@@ -71,8 +71,8 @@ class SettingsField:
 
         An example of such a one is ConfigSettings/ConfigRetriever.
 
-        `xyn_config.config.ConfigSettings` uses a ConfigRetriever, which will use this name
-        field attribute to retrieve a named values from`xyn_config.config.Config`.
+        `xcon.config.ConfigSettings` uses a ConfigRetriever, which will use this name
+        field attribute to retrieve a named values from`xcon.config.Config`.
 
         So you can override the name to tell ConfigSettings what name to use to retrieve value
         with.  Allows you to have an attribute name on your ConfigSettings class that
@@ -163,7 +163,7 @@ class SettingsField:
     not set to anything and/or can't be retrieved.
 
     Used by `xsettings.retriever.SettingsRetrieverProtocol` and it's subclasses
-    (such as ConfigRetriever from xyn-config).
+    (such as ConfigRetriever from xcon).
 
     The default value can also be a property object
     (such as forward-reference from another BaseSettings class).

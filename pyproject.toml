@@ -5,7 +5,7 @@ description = "Ways to document, centeralize, retreive and validate settings."
 authors = ["Josh Orr <josh@orr.blue>"]
 packages = [{include = "xsettings"}]
 readme = "README.md"
-repository = "https://github.com/xyngular/py-xsettings"
+repository = "https://github.com/joshorr/xsettings"
 keywords = ["settings", "lazy", "configuration"]
 classifiers = [
     "Topic :: Software Development :: Libraries :: Python Modules",
