@@ -1,13 +1,16 @@
 import dataclasses
-from typing import Callable, Iterable
+from typing import Callable
 from copy import copy
 from typing import Type, Any, Dict, Generic, TypeVar, TYPE_CHECKING, get_type_hints
 import typing_inspect
 
-from xloop import xloop
-
 from .default_converters import DEFAULT_CONVERTERS
 from xsentinels import unwrap_union, Default
+
+try:
+    import annotationlib
+except ImportError:
+    annotationlib = None
 
 if TYPE_CHECKING:
     from .settings import BaseSettings
@@ -400,7 +403,18 @@ def generate_setting_fields(
     if not parent_fields:
         parent_fields = {}
 
-    annotations = attrs.get("__annotations__", None)
+    if annotationlib:
+        # Use new Python 3.14 way of doing this:
+        annotate_func = annotationlib.get_annotate_from_class_namespace(attrs)
+        # Using `VALUE` format, since we require all types to already be available at class-creation time.
+        if annotate_func:
+            annotations = annotationlib.call_annotate_function(annotate_func, format=annotationlib.Format.VALUE)
+        else:
+            annotations = None
+    else:
+        # Use old Python <3.14 way of doing this:
+        annotations = attrs.get("__annotations__", None)
+
     fields = {k: v for k, v in attrs.items() if _allowed_field(k, v)}
 
     allowed_field_names = set(fields.keys())
