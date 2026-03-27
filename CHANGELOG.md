@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/joshorr/xsettings/compare/v1.4.0...v1.5.0) (2026-03-27)
+
+
+### Features
+
+* support Python 3.14. ([6ba3998](https://github.com/joshorr/xsettings/commit/6ba39988b12fc1d8fad2cbbc3ce18fd2bf13f223))
+
 ## [1.4.0](https://github.com/joshorr/xsettings/compare/v1.3.1...v1.4.0) (2023-05-24)
 
 

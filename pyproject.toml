@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "xsettings"
-version = "1.4.0"
+version = "1.5.0"
 description = "Ways to document, centeralize, retreive and validate settings."
 authors = ["Josh Orr <josh@orr.blue>"]
 packages = [{include = "xsettings"}]
