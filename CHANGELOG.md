@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.4.0](https://github.com/joshorr/xsettings/compare/v1.3.0...v1.4.0) (2026-03-27)
+
+
+### Features
+
+* allow a retriever to return `Default` sentinel value to indicate other retrievers should be skipped and default value for setting used. ([b3fa359](https://github.com/joshorr/xsettings/commit/b3fa359b2e6f6371cda98dc939debf7e723f83c0))
+* support Python 3.14. ([6ba3998](https://github.com/joshorr/xsettings/commit/6ba39988b12fc1d8fad2cbbc3ce18fd2bf13f223))
+
+
+### Bug Fixes
+
+* license ([cdedfaf](https://github.com/joshorr/xsettings/commit/cdedfaf0506f53b23f720e60e36e21543a96eddb))
+
 ## [1.4.0](https://github.com/joshorr/xsettings/compare/v1.3.1...v1.4.0) (2023-05-24)
 
 
