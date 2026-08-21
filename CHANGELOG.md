@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.5.1](https://github.com/joshorr/xsettings/compare/v1.5.0...v1.5.1) (2026-08-21)
+
+
+### Bug Fixes
+
+* unrestrict setup tools version. ([a7af9fb](https://github.com/joshorr/xsettings/commit/a7af9fba8dee8218687caea89f1f427c23e29ee2))
+* unrestrict setup tools version. ([9898f9d](https://github.com/joshorr/xsettings/commit/9898f9d8c0537cc036b77004af37ba8494c8ac1b))
+
 ## [1.5.0](https://github.com/joshorr/xsettings/compare/v1.4.0...v1.5.0) (2026-03-27)
 
 
