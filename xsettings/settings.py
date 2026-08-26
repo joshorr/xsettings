@@ -282,6 +282,11 @@ class _SettingsMeta(type):
 class BaseSettings(
     Dependency,
     metaclass=_SettingsMeta,
+
+    # We should preserve any setting classes in global context between unit-test function runs.
+    remove_between_unittests=False,
+
+    # No default retrievers for BaseSettings.
     default_retrievers=[],
 
     # BaseSettings has no fields, it's a special abstract-type of class skip field generation.
@@ -295,7 +300,7 @@ class BaseSettings(
 
     The purpose of the Settings class is to allow a library or project/service to define a
     number of settings that are needed in order to function. You define a number of Settings
-    propertiess to indicate what settings are available to use in the project.
+    properties to indicate what settings are available to use in the project.
 
     You define a Settings and properties very similar to how you define a dataclass. You specify
     a property name, type_hint, and default_value.
