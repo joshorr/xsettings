@@ -748,14 +748,14 @@ wheels = [
 
 [[package]]
 name = "xinject"
-version = "1.10.1"
+version = "1.11.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "xsentinels" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/43/dd/de0dca9107b86c2c67f40c753fcc1a550442f7d8e161cd96c542e1c5b164/xinject-1.10.1.tar.gz", hash = "sha256:050106e897260814184799a6efcaaaec8425daf331efd1a1edcb05a3de59ace1", size = 34013, upload-time = "2026-06-17T17:07:33.113Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/9b/67/973cf670201f63244e88ac515cfead39b364b103ce42b4412d3afaf58d52/xinject-1.11.0.tar.gz", hash = "sha256:31294ff3f327a98dffcb5a2dd04dca0202b2a6c0ff2f57697bba558a52ddf592", size = 39590, upload-time = "2026-08-26T22:46:08.547Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/d4/70/262d8173667e2ea19348fbb38e543c51dd724d28f63c49e1068796536979/xinject-1.10.1-py3-none-any.whl", hash = "sha256:100fdcb1524abbb83f24ed6e895a5071d884cf779c39b70aa07728f459ec544b", size = 36635, upload-time = "2026-06-17T17:07:33.856Z" },
+    { url = "https://files.pythonhosted.org/packages/85/7e/e5ff7384e8df68db2f86b9c1a3ca0805b4b0f450ac2c2ed46ca05ec1ac92/xinject-1.11.0-py3-none-any.whl", hash = "sha256:8454bafa08e7e4ea7907141c9fdc6e447caaf5d58325ce6039c751504cdb7db2", size = 42833, upload-time = "2026-08-26T22:46:07.633Z" },
 ]
 
 [[package]]
@@ -814,7 +814,7 @@ requires-dist = [
     { name = "ciso8601", specifier = ">=2.3.0,<3" },
     { name = "setuptools", specifier = ">=82.0.1" },
     { name = "xbool", specifier = ">=1.0.0,<2" },
-    { name = "xinject", specifier = ">=1.2.0,<2" },
+    { name = "xinject", specifier = ">=1.11.0,<2" },
     { name = "xloop", specifier = ">=1.1.0,<2" },
     { name = "xsentinels", specifier = ">=1.2.0,<2" },
 ]
