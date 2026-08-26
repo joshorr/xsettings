@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.6.0](https://github.com/joshorr/xsettings/compare/v1.5.1...v1.6.0) (2026-08-26)
+
+
+### Features
+
+* use python 3.14. ([879413f](https://github.com/joshorr/xsettings/commit/879413fafe9862fdd3c985388013fece1a54d4ad))
+
+
+### Bug Fixes
+
+* adapt to new xinject versions, we don't want this cleared betwee… ([1c5231e](https://github.com/joshorr/xsettings/commit/1c5231ee58388a0354267ef0205004c545531543))
+* adapt to new xinject versions, we don't want this cleared between tests. ([543ad73](https://github.com/joshorr/xsettings/commit/543ad73d343ae69b54413857f3a23713bace15e8))
+* put wrong value in, fixing it. ([8ef7fb0](https://github.com/joshorr/xsettings/commit/8ef7fb08b2897911bfc6cd74d705d6306ecea36a))
+
 ## [1.5.1](https://github.com/joshorr/xsettings/compare/v1.5.0...v1.5.1) (2026-08-21)
 
 
