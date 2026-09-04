@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.6.1](https://github.com/joshorr/xsettings/compare/v1.6.0...v1.6.1) (2026-09-04)
+
+
+### Bug Fixes
+
+* the intent was to preserve this between unit tests. ([0a6793b](https://github.com/joshorr/xsettings/commit/0a6793b2e5012452dd26dddb933234e3afb53e8d))
+* the intent was to preserve this between unit tests. ([6849daf](https://github.com/joshorr/xsettings/commit/6849dafd0d2114e6545271c34a121847a4d2ce19))
+
 ## [1.6.0](https://github.com/joshorr/xsettings/compare/v1.5.1...v1.6.0) (2026-08-26)
 
 
