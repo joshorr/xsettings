@@ -284,7 +284,7 @@ class BaseSettings(
     metaclass=_SettingsMeta,
 
     # We should preserve any setting classes in global context between unit-test function runs.
-    remove_between_unittests=True,
+    remove_between_unittests=False,
 
     # No default retrievers for BaseSettings.
     default_retrievers=[],
